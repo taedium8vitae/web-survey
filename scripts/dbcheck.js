@@ -1,0 +1,1 @@
+window.location.replace("vars/1/index.html")
