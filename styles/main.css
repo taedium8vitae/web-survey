@@ -1,3 +1,7 @@
+@font-face{
+	font-family: mikiBold;
+	src: "/fonts/KontrapunktMiki-Bold.otf";
+}
 title{
-	color: violet;
+	font-family: mikiBold;
 }
