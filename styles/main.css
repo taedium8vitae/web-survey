@@ -1,13 +1,7 @@
-@font-face {
-	font-family: "miki";
-	src: url("fonts/regular.otf") format("opentype");
-}
-@font-face {
-	font-family: "miki";
-	src: url("fonts/bold.otf") format("opentype");
-	font-weight: bold;
-}
 body{
 	font-family: 'miki';
 	color: black;
+}
+.title{
+	font-family: 'miki_extra_bold';
 }
