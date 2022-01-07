@@ -1,7 +1,13 @@
-@font-face{
-	font-family: mikiBold;
-	src: "/fonts/KontrapunktMiki-Bold.otf";
+@font-face {
+	font-family: "miki";
+	src: url("fonts/regular.otf") format("opentype");
 }
-title{
-	font-family: mikiBold;
+@font-face {
+	font-family: "miki";
+	src: url("fonts/bold.otf") format("opentype");
+	font-weight: bold;
+}
+body{
+	font-family: 'miki';
+	color: black;
 }
