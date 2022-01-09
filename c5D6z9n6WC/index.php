@@ -92,11 +92,11 @@ This website's purpose is actually to record the user's behavior on websites. Do
 							</form>';
 					}elseif($_POST['q'] == 1){
 						echo '<div>question 1</div>';
-					}elseif($_POST['q'] == 1){
+					}elseif($_POST['q'] == 2){
+						echo '<div>question 2</div>';
+					}elseif($_POST['q'] == 3){
 						
-					}elseif($_POST['q'] == 1){
-						
-					}elseif($_POST['q'] == 1){
+					}elseif($_POST['q'] == 4){
 						
 					}else{
 
