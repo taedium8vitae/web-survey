@@ -57,5 +57,26 @@ This website's purpose is actually to record the user's behavior on websites. Do
 				<h2> > </h2>
 				<h2>poll name</h2>
 			</header>
+
+			<!-- CONNECTION TO THE DATABASE -->
+
+			<?php
+			try
+			{
+				$db = new PDO('mysql:host=1r3oj.myd.infomaniak.com;dbname=shineon;charset=utf8',
+				'server',
+				'Moiaussi13',
+					array(
+						PDO::ATTR_TIMEOUT => 3, // in seconds
+						PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+				)
+				);
+			}
+			catch (Exception $e)
+			{
+					die('Error : ' . $e->getMessage());
+			}
+			?>
+
 		</body>
 	</html>
