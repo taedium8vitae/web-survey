@@ -25,11 +25,3 @@ foreach ($recipes as $recipe) {
 <?php
 }
 ?>
-
-
-
-
-
-
-
-
