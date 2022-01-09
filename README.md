@@ -1,3 +1,0 @@
-# web-survey
-Hey ! This is a project I'm working on for school called a  maturity work. Basically a huge work that determines if you passed or nah...
-The idea of this website is to determine, while people think they are just taking a survey, what influence them on the website by modifying elements like the colours, size, etc. of the elements.
