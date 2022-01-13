@@ -87,19 +87,50 @@ This website's purpose is actually to record the user's behavior on websites. Do
 					//CHECK FOR PAGE NUMBER
 					if(!isset($_POST['q'])){
 						//MAINPAGE
-						echo '<form action="" method="POST">
-							<button name="q">Start</button>
-							</form>';
+						?>
+							<form action="" method="POST">
+							<button name="q" value="1">Start</button>
+							</form>
+						<?php
 					}elseif($_POST['q'] == 1){
-						echo '<div>question 1</div>';
-					}elseif($_POST['q'] == 2){
-						echo '<div>question 2</div>';
-					}elseif($_POST['q'] == 3){
-						
-					}elseif($_POST['q'] == 4){
-						
-					}else{
+						// QUESTION 1
+						?>
 
+						<div class="choice1"></div>
+						<div class="choice2"></div>
+
+						<?php
+					}elseif($_POST['q'] == 2){
+						// QUESTION 2
+						?>
+
+						
+
+						<?php
+					}elseif($_POST['q'] == 3){
+						// QUESTION 3
+						?>
+
+						
+
+						<?php
+					}elseif($_POST['q'] == 4){
+						// QUESTION 4
+						?>
+
+						
+
+						<?php
+					}elseif($_POST['q'] == 5){
+						// END SCREEN (5)
+						?>
+
+						
+
+						<?php
+					}else{
+						header("Location: https://www.shineonpoll.com/c5D6z9n6WC/");
+						exit();
 					}
 
 				}
