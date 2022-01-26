@@ -58,7 +58,6 @@ This website's purpose is actually to record the user's behavior on websites. Do
 				<h2> > </h2>
 				<h2>poll name</h2>
 			</header>
-
 			<!-- CONNECTION TO THE DATABASE -->
 
 			<?php
@@ -85,43 +84,45 @@ This website's purpose is actually to record the user's behavior on websites. Do
 				//CONNECTION UNSUCCESSFUL
 				}else{
 					//CHECK FOR PAGE NUMBER
-					if(!isset($_POST['q'])){
+					if(!isset($_GET['q'])){
 						//MAINPAGE
 						?>
-							<form action="" method="POST">
+							<form method="GET">
 							<button name="q" value="1">Start</button>
 							</form>
 						<?php
-					}elseif($_POST['q'] == 1){
+					}elseif($_GET['q'] == 1){
 						// QUESTION 1
 						?>
 
-						<div class="choice1"></div>
-						<div class="choice2"></div>
+							<form method="GET">
+								<button name="q" value="2">Choix 1</button>
+								<button name="q" value="2">Choix 2</button>
+							</form>
 
 						<?php
-					}elseif($_POST['q'] == 2){
+					}elseif($_GET['q'] == 2){
 						// QUESTION 2
 						?>
 
 						
 
 						<?php
-					}elseif($_POST['q'] == 3){
+					}elseif($_GET['q'] == 3){
 						// QUESTION 3
 						?>
 
 						
 
 						<?php
-					}elseif($_POST['q'] == 4){
+					}elseif($_GET['q'] == 4){
 						// QUESTION 4
 						?>
 
 						
 
 						<?php
-					}elseif($_POST['q'] == 5){
+					}elseif($_GET['q'] == 5){
 						// END SCREEN (5)
 						?>
 
