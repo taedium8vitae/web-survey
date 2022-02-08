@@ -38,14 +38,13 @@ This website's purpose is actually to record the user's behavior on websites. Do
 			<link rel="stylesheet" href="/styles/main.css"/>
 		</head>
 		<body>
-			<!-- HEADER -->
 			<header>
 				<a class="title" href="https://www.shineonpoll.com">Shineon.</a>
 				<h2> >> </h2>
 				<h2>Poll Name</h2>
 			</header>
-			<!-- CONNECTION TO THE DATABASE -->
 			<?php
+			// DB CONNECTION
 			$connectionsuccess = 'true';
 			try
 			{
@@ -79,7 +78,6 @@ This website's purpose is actually to record the user's behavior on websites. Do
 					}elseif($_GET['q'] == 1){
 						// QUESTION 1
 						?>
-
 							<form method="GET">
 								<button name="q" value="2">Choix 1</button>
 								<button name="q" value="2">Choix 2</button>
