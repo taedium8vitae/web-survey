@@ -26,8 +26,12 @@
 body {
 	font-family: 'miki';
 	font-weight: normal;
+	color: black;
 }
-
 .title {
 	font-weight: bolder;
+}
+a{
+	color: inherit;
+	text-decoration: none;
 }
