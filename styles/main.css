@@ -1,6 +1,33 @@
-body{
-	font-family: 'miki';
+@font-face {
+    font-family: 'miki';
+    src: url('/fonts/bold-webfont.woff2') format('woff2'),
+         url('/fonts/bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
 }
-.title{
-	font-family: 'miki_extra_bold';
+@font-face {
+    font-family: 'miki';
+    src: url('/fonts/extrabold-webfont.woff2') format('woff2'),
+         url('/fonts/extrabold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'miki';
+    src: url('/fonts/regular-webfont.woff2') format('woff2'),
+         url('/fonts/regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'miki';
+	font-weight: normal;
+}
+
+.title {
+	font-weight: bolder;
 }
