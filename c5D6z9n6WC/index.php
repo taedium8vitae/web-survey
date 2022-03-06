@@ -43,26 +43,7 @@ This website's purpose is actually to record the user's behavior on websites. Do
 				<h2> >> </h2>
 				<h2>Poll Name</h2>
 			</header>
-			<?php
-			// DB CONNECTION
-			$connectionsuccess = 'true';
-			try
-			{
-				$db = new PDO('mysql:localhost;dbname=test;charset=utf8',
-				'root',
-				'root',
-					array(
-						PDO::ATTR_TIMEOUT => 3, // in seconds
-						PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-				)
-				);
-			}
-			catch (Exception $e)
-			{
-					die('Error : ' . $e->getMessage());
-					$connectionsuccess = 'false';
-			}
-			?>
+			<?php require 'db_connect.php'?>
 			<?php 
 				if(!$connectionsuccess){
 				//CONNECTION UNSUCCESSFUL
@@ -78,6 +59,7 @@ This website's purpose is actually to record the user's behavior on websites. Do
 					}elseif($_GET['q'] == 1){
 						// QUESTION 1
 						?>
+							<div>Question 1</div>
 							<form method="GET">
 								<button name="q" value="2">Choix 1</button>
 								<button name="q" value="2">Choix 2</button>
@@ -86,14 +68,29 @@ This website's purpose is actually to record the user's behavior on websites. Do
 					}elseif($_GET['q'] == 2){
 						// QUESTION 2
 						?>
+							<div>Question 2</div>
+							<form method="GET">
+								<button name="q" value="3">Choix 1</button>
+								<button name="q" value="3">Choix 2</button>
+							</form>
 						<?php
 					}elseif($_GET['q'] == 3){
 						// QUESTION 3
 						?>
+							<div>Question 3</div>
+								<form method="GET">
+									<button name="q" value="4">Choix 1</button>
+									<button name="q" value="4">Choix 2</button>
+								</form>
 						<?php
 					}elseif($_GET['q'] == 4){
 						// QUESTION 4
 						?>
+							<div>Question 4</div>
+							<form method="GET">
+								<button name="q" value="5">Choix 1</button>
+								<button name="q" value="5">Choix 2</button>
+							</form>
 						<?php
 					}elseif($_GET['q'] == 5){
 						// END SCREEN (5)
