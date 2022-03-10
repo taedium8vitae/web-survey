@@ -3,7 +3,7 @@
 			$connectionsuccess = 'true';
 			try
 			{
-				$db = new PDO('mysql:localhost;dbname=test;charset=utf8',
+				$db = new PDO('mysql:localhost;dbname=variations_entries;charset=utf8',
 				'root',
 				'root',
 					array(
